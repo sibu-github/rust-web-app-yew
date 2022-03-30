@@ -6,6 +6,10 @@ use yew::prelude::*;
 mod components;
 mod splitter;
 
+const BOARD_ROW_SIZE:u32 = 5;
+const BOARD_ROW_COUNT:u32 = 7;
+
+
 struct Board {
     rows_data: Vec<RowData>,
 }
@@ -23,11 +27,11 @@ impl Board {
     }
 
     fn get_row_size() -> usize {
-        5
+        BOARD_ROW_SIZE as usize
     }
 
     fn get_no_of_rows() -> usize {
-        7
+        BOARD_ROW_COUNT as usize
     }
 
 }

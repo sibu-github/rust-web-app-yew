@@ -12,7 +12,7 @@ pub struct CellData {
 impl CellData {
     pub fn new() -> Self {
         Self {
-            txt: String::from("a"),
+            txt: String::new(),
             is_fully_matched: false,
             is_partially_matched_correct_pos: false,
             is_partially_matched_wrong_pos: false,
